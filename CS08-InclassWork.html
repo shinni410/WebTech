@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>Web Technologies - Dong Ho Shin </title>
+        <link rel="stylesheet" trpe="text/css" href="css/CS08-Inclass.css">
+
+    <style>
+    h1{text-align:center;
+    color: navy;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    form{
+        font-family:Arial, Helvetica, sans-serif;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left:100px;
+        margin-right:100px;
+        color:navy;
+        background-color: silver;
+        width: 400px;
+        padding: 20px 500px 20px 100px;
+    }
+        </style>
+</head>
+
+<body>
+    <h1>Web Forms - CS08-InClass</h1>
+    <form method="POST" action="mailto:dshin3@babson.edu">
+        <p> Last Name: <input type="text" name="lastname"
+        maxlength="8" size="10"> First Name: <input type="text" name="firstname"
+        maxlength="8" size="10"></P>
+
+        <p>Gender: Male<input type="radio" name="gender" value="m">
+            Female<input type="radio" name="gender" value="f"></p>
+
+
+        <P>My Favorite Web Topics Are<br>
+            <input type="checkbox" name="product-question"
+            value="1">Basic HTML<br>
+            <input type="checkbox" name="product-question"
+            value="2">CSS<br>
+            <input type="checkbox" name="product-question"
+            value="3">Tables<br>
+            <input type="checkbox" name="product-question"
+            value="4">FORMS<br>
+        </P>
+
+        <p>What Grade Do you Expect to Receive?
+            <select name="grade">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+            </select>
+        </p>
+
+        <p>Please add any comments you have.
+        <textarea name="comments" row="5" cols="29"> Any Comments! </textarea>
+        </p>
+
+        <p><button type="submit" name="submit" value="submit">
+            SUBMIT <img src="../Images/mailbox.png" height="30"
+            alt="submit_button"/>
+            </button>
+            <button type="reset" name="reset" value="reset">
+            RESET <img src="../Images/reset.png" height="30"
+            alt="reset_buttom"/>
+            </button>
+        
+    </form>
+
+
+
+</body>
+
+</html>
