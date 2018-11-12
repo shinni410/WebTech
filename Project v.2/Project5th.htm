@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html> 
+
+  <head>
+        <meta charset="UTF-8">
+	<title>Suwon - The Human City</title>
+
+	<style type="text/css">
+	body{
+        background-color: aquamarine;
+    }
+    .content { 
+        border-collapse:collapse;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align:center;
+        }
+        form{
+            text-align: center;
+            margin-top: 1%;
+        }
+        td {
+        border: 1px solid black;
+        }
+    img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+	</style>
+	
+	<script type="text/javascript">
+            function convert() {
+            myForm = document.getElementById("conv");
+            let won = myForm.won.value;
+            let dol = myForm.dol.value;
+            if ((won == "") && (dol == "")) {
+                alert("You must fill in value in Won or Dollar!");
+            }
+            else if ((isNaN(won)) || (isNaN(dol))) {
+                alert("You did not enter a valid currency!");
+            }
+            else if (won != "") {
+                let convertWon = won * 0.00088;
+                myForm.dol.value = convertWon;
+            }
+            else if (far != "") {
+                let convertDol = dol | 0.00088;
+                myForm.won.value = convertDol;         
+            }
+            return false;             
+        }
+	</script>
+  </head>
+
+  <body>
+        <table align = "center" cellpadding = "30">
+                <tr>
+                <td><a href = "../Project/index.htm">Home Page</a></td>
+                <td><a href = "../Project/Project2nd.htm"><b>About Suwon</b></a></td>
+                <td><a href ="../Project/Project4th.htm"> <b>Food</b></a></td>
+                <td><a href = "../Project/Project5th.htm">Currency</a></td>
+                <td><a href = "../Project/Project6th.htm">Photo</a></td>
+                <td><a href = "../Project/Project3rd.htm"> <b>Contact Us</b></a></td>
+               
+                </tr>
+                </table>
+ <div style = "background-color: gold;">     
+<h1>Currency in South Korea</h1>
+<p>
+        The won (/wʌn/;[3] Korean: 원, Korean pronunciation: [wʌn]; symbol: ₩; code: KRW) or 
+        the Korean Won is the currency of South Korea. A single won is divided into 100 jeon, the monetary subunit. 
+        The jeon is no longer used for everyday transactions, and appears only in foreign exchange rates. 
+        The won is issued by the Bank of Korea, based in the capital city of Seoul.
+</p>
+</div>
+<h2>Currency Converter</h2>
+<p>Do you want to know how many 'won' you can get with your planned budget for the trip? Here is a little converter for you! Put in the amount of dollar you wish to bring
+    to see how much it will convert!
+</p>
+<form action="" method="post" id = "conv"> 
+        <div id="d1">
+            South Korean Won: ₩<input type="text" name="won" size="10" /> U.S Dollar: $<input type="text" name="dol" size="10" />
+        </div>
+
+        <div style="margin-left:100px">
+            <input type="submit" name="submit" value="Convert" style="width:80px; height:40px;" onclick = "return convert()"/>
+            <input type="reset" name="reset" value="Clear" style="width:80px; height:40px;" />
+        </div>
+    </form>
+
+<p><a href="index.htm">Click to go back to the Home Page</a>
+  </body>
+</html>

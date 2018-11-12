@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html> 
+
+  <head>
+        <meta charset="UTF-8">
+        <title>Project -Dong Ho Shin</title>
+      
+    <style>
+    body{
+        background-color: skyblue;
+        text-align: center;
+    }
+    table { 
+        margin-left: center;
+        border-collapse:collapse;
+        }
+	td {
+        border: 1px solid black;
+        }
+    .mySlides {
+    display:none;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+
+    </style>
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+    showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+    }
+  x[slideIndex-1].style.display = "block";  
+}
+    </script>
+    </head>
+
+    <body>
+            <table align = "center" cellpadding = "30">
+                    <tr>
+                    <td><a href = "../Project/index.htm">Home Page</a></td>
+                    <td><a href = "../Project/Project2nd.htm"><b>About Suwon</b></a></td>
+                    <td><a href ="../Project/Project4th.htm"> <b>Food</b></a></td>
+                    <td><a href = "../Project/Project5th.htm">Currency</a></td>
+                    <td><a href = "../Project/Project6th.htm">Photo</a></td>
+                    <td><a href = "../Project/Project3rd.htm"> <b>Contact Us</b></a></td>
+                   
+                    </tr>
+                    </table>
+        <h2 class="w3-center">All about Suwon Slideshow</h2>
+        <p>This is some footage of the Suwon Tour Guide, which was from January of 2017 to November of 2017.
+            Click on the arrow buttons to see what you are missing in Suwon!
+        </p>
+
+
+        <div style="align-self: center;">
+        <img class="mySlides" src="../Project/Folk_village_-_Korea.jpg" style="width:50%" alt="Suwon Folk Village Parade Band">
+        <img class="mySlides" src="../Project/full-day-suwon-hwaseong-fortress-and-korean-folk-village-tour-from-in-seoul-335681.jpg" style="width:50%" alt="Train tour of Hwaseong Fortress">
+        <img class="mySlides" src="../Project/suwon-city-tour-gold.jpg" style="width:50%" alt="A boy with golden 'business'. This statue wishes visitors a luck.">
+        <img class="mySlides" src="../Project/suwon-city-tour-warrior.jpg" style="width:50%" alt="Astonishing performance of Hwaseong Fortress Gate Keeper.">            
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+    </body>
+
+
+<p><a href="index.htm">Click to go back to the Home Page</a>
+</p>
